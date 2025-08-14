@@ -1,0 +1,220 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+}
+:root {
+    --primary:#536942;
+    --secondary:#ffd936;
+    --whitt:#efefef;
+
+
+}
+body {
+    font-family: "DM Sans",sans-serif;
+   color: var(--primary);
+
+}
+a {
+    text-decoration: none;
+}
+#main {
+    background-image: url(./image/main.png);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+.container {
+    min-width: 1200px;
+    padding: 16px;
+    margin: auto;
+    position: relative;
+}
+section{
+    margin: 80px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+.nav-list a{
+    color: var(--whitt);
+}
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-secondary{
+    border: 2px solid var(--whitt);
+    color: var(--whitt);
+    font-weight: bold;
+
+}
+.btn-primary{
+ border: none;
+ background: var(--secondary);
+ color: var(--primary);   
+}
+.main-content{
+display: flex; 
+flex-direction: column;
+align-items: center;
+margin-top: 80px;
+justify-content: center;
+color: var(--whitt);
+}
+.main-content .main-head{
+  font-size: 110px;
+   margin-top: -20px;
+}
+.main-content .intro-head{
+    font-size: 50px;
+  
+  }
+  .main-content p{
+    margin-bottom: 10px;
+    max-width: 250p;
+  }
+  .menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+  }
+  .section-title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .section-title .line{
+    width: 150px;
+    height: 4px;
+    border: 10p;
+    background: var(--secondary);
+    margin: auto;
+  }
+  .services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+   flex-wrap: wrap ;
+  }
+  .service{
+    width: 350px;
+  }
+  .service img{
+    min-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+
+  }
+  .service img:hover {
+    transform: scale(1.05);
+  }
+  #testimonial{
+    background: #ab0606;
+  }
+  #testimonia .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;
+    gap: 30px;
+
+  }
+  #testimonia h1{
+    font-size: 30px;
+    font-family: "Forum",sans-serif;
+
+  }
+  #testimonia profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-us .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+
+}
+#about-us .container .about-content{
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+#about-us .containe.about-content h1{
+  font-family: "Forum"sans-serif;
+  font-size: 30px;
+
+}
+#questions {
+  min-height: 500px;
+  background-image: url("./image/main-2.png");
+  background-position: bottom center;
+  background-size: cover;
+}
+#questions .containe{
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+
+ @media screen and (max-width:520px){
+   
+    .nav-list{
+    flex-direction: column;
+    background: gray;
+    position: absolute;
+    top: 0;
+    right: -900px;
+    width: 80%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+   }
+   .nav-list.active{
+    right: 0;
+   }
+   
+   
+   .nav-list li:not(:last-child){
+    text-align: left;
+    width: 100%;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--whitt);
+    
+   }
+   #about-us .containe{
+    flex-direction: column;
+    gap: 30px;
+
+   }
+  }
+ 
+
+  
+  
